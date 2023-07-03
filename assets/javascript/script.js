@@ -91,39 +91,33 @@ saveButtonEight.addEventListener("click", function() {
     localStorage.setItem("4PM", fourPm);
 }); 
 
-// var saveButtonNine = document.querySelector("#fivePmBtn");
-// saveButtonNine.addEventListener("click", function() {
-//     var fivePm = document.querySelector("#fivePm").value;
-//     localStorage.setItem("5PM", fivePm);
-// }); 
-
 var saveButtonNine = document.querySelector("#fivePmBtn");
 saveButtonNine.addEventListener("click", function() {
-    var test = localStorage.getItem("9AM");
-    console.log(test);  
-    document.querySelector("#fivePm").innerHTML = test;
+    var fivePm = document.querySelector("#fivePm").value;
+    localStorage.setItem("5PM", fivePm);
 }); 
 
 
-
-
-
-// window.onbeforeunload = function() {
-//     var nineAmInput = localStorage.getItem("9AM");
-//     console.log(nineAmInput);
-
-// }
-
-
-//  if (window.performance) {
-//     console.log("window.performance works fine on this browser");
-//   }
-//   console.log(performance.navigation.type);
-//   if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
-//     console.log( "This page is reloaded" );
-//   } else {
-//     console.log( "This page is not reloaded");
-//   }
+window.onload = function(){
+    var nineEvent = localStorage.getItem("9AM");
+    document.querySelector("#nineAm").innerHTML = nineEvent;
+    var tenEvent = localStorage.getItem("10AM");
+    document.querySelector("#tenAm").innerHTML = tenEvent;
+    var elevenEvent = localStorage.getItem("11AM");
+    document.querySelector("#elevenAm").innerHTML = elevenEvent;
+    var twelveEvent = localStorage.getItem("12PM");
+    document.querySelector("#twelvePm").innerHTML = twelveEvent;
+    var oneEvent = localStorage.getItem("1PM");
+    document.querySelector("#onePm").innerHTML = oneEvent;
+    var twoEvent = localStorage.getItem("2PM");
+    document.querySelector("#twoPm").innerHTML = twoEvent;
+    var threeEvent = localStorage.getItem("3PM");
+    document.querySelector("#threePm").innerHTML = threeEvent;
+    var fourEvent = localStorage.getItem("4PM");
+    document.querySelector("#fourPm").innerHTML = fourEvent;
+    var fiveEvent = localStorage.getItem("5PM");
+    document.querySelector("#fivePm").innerHTML = fiveEvent;
+};
 
 $(function () {
 
