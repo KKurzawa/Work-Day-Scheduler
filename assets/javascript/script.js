@@ -91,19 +91,28 @@ saveButtonEight.addEventListener("click", function() {
     localStorage.setItem("4PM", fourPm);
 }); 
 
+// var saveButtonNine = document.querySelector("#fivePmBtn");
+// saveButtonNine.addEventListener("click", function() {
+//     var fivePm = document.querySelector("#fivePm").value;
+//     localStorage.setItem("5PM", fivePm);
+// }); 
+
 var saveButtonNine = document.querySelector("#fivePmBtn");
 saveButtonNine.addEventListener("click", function() {
-    var fivePm = document.querySelector("#fivePm").value;
-    localStorage.setItem("5PM", fivePm);
+    var test = localStorage.getItem("9AM");
+    console.log(test);  
+    document.querySelector("#fivePm").innerHTML = test;
 }); 
 
 
 
-window.onbeforeunload = function() {
-    var nineAmInput = localStorage.getItem("9AM");
-    console.log(nineAmInput);
 
-}
+
+// window.onbeforeunload = function() {
+//     var nineAmInput = localStorage.getItem("9AM");
+//     console.log(nineAmInput);
+
+// }
 
 
 //  if (window.performance) {
