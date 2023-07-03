@@ -9,13 +9,13 @@ This project creates work day calender in which the current date is displayed, t
 When the page is loaded we see 9 one hour timeslots from 9AM-5PM.  Each time slot is color coded: past is grey, present is orange, and future is green.  The user can write in the text area and then save what is written by clicking the blue save button.  When the page is refreshed the saved input stays in the appropriate place.
 
 Screenshots:
-![Top](https://github.com/KKurzawa/C4JavaScript-Fundamentals-Challenge/blob/main/assets/images/img1.png)
-![Bottom](https://github.com/KKurzawa/C4JavaScript-Fundamentals-Challenge/blob/main/assets/images/img2.png)
+![Top](https://github.com/KKurzawa/C5Work-Day-Scheduler/blob/main/assets/images/img1.png)
+![Bottom](https://github.com/KKurzawa/C5Work-Day-Scheduler/blob/main/assets/images/img2.png)
 
 
 Website URL: 
 
-GitHub Repository: 
+GitHub Repository: https://github.com/KKurzawa/C5Work-Day-Scheduler
 
 ## CREDITS
 
