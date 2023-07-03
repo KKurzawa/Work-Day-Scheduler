@@ -2,13 +2,12 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 
-
+// date and time
 var today = dayjs().format('dddd, MMMM D YYYY');
 $('#currentDay').text(today);
-
 var currentTime = dayjs().hour();
-console.log(currentTime);
 
+//variables for timeslots
 var nine = document.getElementById("hour-9");
 var ten = document.getElementById("hour-10");
 var eleven = document.getElementById("hour-11");
@@ -19,6 +18,7 @@ var fifteen = document.getElementById("hour-15");
 var sixteen = document.getElementById("hour-16");
 var seventeen = document.getElementById("hour-17");
 
+//determines if time slot is in past, present, or future.
 function changeNumber(x, y) {
     if (currentTime > x) {
         console.log("past");
@@ -31,6 +31,7 @@ function changeNumber(x, y) {
         y.classList.add("future")
     }};
     
+    //function called for each timeslot
     changeNumber(9, nine);
     changeNumber(10, ten);
     changeNumber(11, eleven);
@@ -41,9 +42,8 @@ function changeNumber(x, y) {
     changeNumber(16, sixteen);
     changeNumber(17, seventeen);
 
-
+//event listeners for each timeslot that saves input to local storage
 var saveButtonOne = document.querySelector("#nineAmBtn");
-
 saveButtonOne.addEventListener("click", function() {
     var nineAm = document.querySelector("#nineAm").value;
     localStorage.setItem("9AM", nineAm);
@@ -97,7 +97,7 @@ saveButtonNine.addEventListener("click", function() {
     localStorage.setItem("5PM", fivePm);
 }); 
 
-
+//gets items saved in local storage and displays them in correct slot when page refresh button is clicked
 window.onload = function(){
     var nineEvent = localStorage.getItem("9AM");
     document.querySelector("#nineAm").innerHTML = nineEvent;
