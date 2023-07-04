@@ -17,13 +17,10 @@ var seventeen = document.getElementById("hour-17");
 //determines if time slot is in past, present, or future.
 function changeNumber(time, rowElement) {
     if (currentTime > time) {
-        // console.log("past");
         rowElement.classList.add("past")
     } else if (currentTime == time) {
-        // console.log("present");
         rowElement.classList.add("present")
     } else if (currentTime < time) {
-        // console.log("future");
         rowElement.classList.add("future")
     }};
 
