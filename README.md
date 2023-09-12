@@ -12,9 +12,9 @@ Screenshots:
 ![Top](https://github.com/KKurzawa/C5Work-Day-Scheduler/blob/main/assets/images/img1.png)
 ![Bottom](https://github.com/KKurzawa/C5Work-Day-Scheduler/blob/main/assets/images/img2.png)
 
-Website URL: https://kkurzawa.github.io/C5Work-Day-Scheduler/
+Website URL: https://kkurzawa.github.io/Work-Day-Scheduler/
 
-GitHub Repository: https://github.com/KKurzawa/C5Work-Day-Scheduler
+GitHub Repository: https://github.com/KKurzawa/Work-Day-Scheduler
 
 ## CREDITS
 
