@@ -1,6 +1,6 @@
-# C5 Work Day Scheduler
+# Work Day Scheduler
 
-## Challenge 5 in MSU Bootcamp
+## Description
 
 This project creates a work day calender in which the current date is displayed, time slots are color coded to past/present/future, and text entries are saved even when the page is refreshed. This is an important tool in organizing ones day to day events. Building this project helped tighten up my JavaScript skills and introduced me to the use of Dayjs.
 
